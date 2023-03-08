@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace _08_03
 {
-    public class pessoa
+    public class Pessoa
     {
         private int Id;
         private string Nome;
         private string Telefone;
 
-        public pessoa(int id, string nome, string telefone)
+        public Pessoa (int id, string nome, string telefone)
         {
             Id = id;
             Nome = nome;
