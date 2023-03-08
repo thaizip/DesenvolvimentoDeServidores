@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace _08_03
 {
-    internal class produto
+    public class produto
     {
+        private int Id;
+        private string Descricao;
+        private decimal Valor;
+    
+        public produto(int id,string descricao, decimal valor)
+        {
+            Id = id;
+            Descricao = descricao;
+            Valor = valor;
+        }
     }
+
 }
