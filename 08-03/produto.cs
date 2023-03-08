@@ -11,8 +11,8 @@ namespace _08_03
         private int Id;
         private string Descricao;
         private decimal Valor;
-    
-        public produto(int id,string descricao, decimal valor)
+
+        public produto(int id, string descricao, decimal valor)
         {
             Id = id;
             Descricao = descricao;
@@ -22,15 +22,33 @@ namespace _08_03
         {
             return Id;
         }
-
+        public void setId(int id)
+        {
+            if (id > 0)
+            {
+                Id = id;
+            }
+        }
         public string getDescricao()
         {
             return Descricao;
+        }
+        public void setDescricao(string descricao) {
+            if (descricao != "")
+            {
+                Descricao = descricao;
+            }
         }
 
         public decimal getValor()
         {
             return Valor;
+        }
+        public void setValor(decimal valor)
+        {
+            if(Valor != 0) {
+                Valor = valor;
+            } 
         }
     }
 
