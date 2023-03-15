@@ -11,16 +11,27 @@ namespace _08_03
         private int Id;
         private string Nome;
         private string Telefone;
+        private Endereco Endereco;
 
-        public Cliente (int id, string nome, string telefone)
+        public Cliente (int id, string nome, string telefone, Endereco endereco)
         {
             Id = id;
             Nome = nome;
             Telefone = telefone;
+            Endereco = endereco;
 
         }
         
-        public int GetId()
+        public void setEndereco(Endereco endereco)
+        {
+            Endereco = endereco;
+        }
+
+        public Endereco getEndereco()
+        {
+            return Endereco;
+        }
+        public int getId()
         {
             return Id;
         }
@@ -29,7 +40,7 @@ namespace _08_03
             Id = id;
         }
 
-        public string GetNome()
+        public string getNome()
         {
             return Nome;
         }
@@ -38,7 +49,7 @@ namespace _08_03
             Nome = nome;
         }
 
-        public string GetTelefone()
+        public string getTelefone()
         {
             return Telefone;
         }

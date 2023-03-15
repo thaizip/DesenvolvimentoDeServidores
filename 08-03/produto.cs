@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace _08_03
 {
-    public class produto
+    public class Produto
     {
         private int Id;
         private string Descricao;
         private decimal Valor;
 
-        public produto(int id, string descricao, decimal valor)
+        public Produto(int id, string descricao, decimal valor)
         {
             Id = id;
             Descricao = descricao;
