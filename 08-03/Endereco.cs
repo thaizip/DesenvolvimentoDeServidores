@@ -24,6 +24,16 @@ namespace _08_03
             Cidade = cidade;
             Estado = estado;
         }
+
+        public string getEnderecoCompleto()
+        {
+            return Rua+ " " + Numero+ " " + Bairro + " " + Cidade + " " + Estado;
+        }
+
+        public string getEnderecoCurto()
+        {
+            return Rua + " " + Numero;
+        }
         public void setRua(string rua)
         {
             Rua = rua;
